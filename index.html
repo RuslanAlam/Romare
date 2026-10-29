@@ -1,0 +1,1523 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="img/logo-s.webp" type="image/webp">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>ROMARE</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ROMARE by Ruslan Alam. The art of dressing well, beginning with one integrated wool cardigan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&amp;family=Libre+Caslon+Display&amp;family=Libre+Caslon+Text:ital,wght@0,400;1,400&amp;display=swap">
+<style>
+:root{
+  /* Layout: a quiet boutique. Warm beige walls, ivory display tables for the photographs, navy lettering, and one antique-gold hairline wherever a divider is needed. One light theme by design: the brand palette is beige-led. */
+  --beige:#F2EBDD;
+  --ivory:#FAF8F3;
+  --navy:#12263D;
+  --navy-hover:#1E3756;
+  --muted:#4A5668;
+  --gold:#B7A080;
+  --gold-ink:#7A6748;
+  --line:#E0D5C2;
+  --studio-top:#F2E9DA;
+  --studio-bot:#F8F1E6;
+  --scrim:rgba(18,38,61,.38);
+  --alert:#8A2E2E;
+  --font-display:"Libre Caslon Display","Libre Caslon Text",Georgia,"Times New Roman",serif;
+  --font-serif:"Libre Caslon Text",Georgia,"Times New Roman",serif;
+  --font-sans:"Jost","Futura","Century Gothic","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+  --hdr:78px;
+  color-scheme:light;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.locked{overflow:hidden}
+body{margin:0;background:var(--beige);color:var(--navy);font:400 1rem/1.7 var(--font-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--beige)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button,input,textarea,select{font:inherit;color:inherit}
+h1,h2,h3,p,figure,blockquote,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-weight:400;text-wrap:balance}
+ul.plain{list-style:none;padding:0}
+:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+[tabindex="-1"]:focus{outline:none}
+::selection{background:var(--navy);color:var(--ivory)}
+.wrap{width:100%;max-width:1320px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:760px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:12px;top:-80px;z-index:200;background:var(--navy);color:var(--ivory);padding:.7rem 1rem;text-decoration:none}
+.skip:focus{top:12px}
+
+/* Type */
+.label{font:500 .75rem/1.3 var(--font-sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink)}
+.title-xl{font-family:var(--font-display);font-size:clamp(2.1rem,4.4vw,3.5rem);line-height:1.1;letter-spacing:.03em;text-transform:uppercase}
+.title-l{font-family:var(--font-display);font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.12;letter-spacing:.04em;text-transform:uppercase}
+.title-m{font-family:var(--font-display);font-size:clamp(1.55rem,2.6vw,2.1rem);line-height:1.18;letter-spacing:.05em;text-transform:uppercase}
+.title-s{font-family:var(--font-serif);font-size:1.25rem;line-height:1.35}
+.copy{font-size:1.0625rem;line-height:1.75;color:var(--muted);max-width:52ch}
+.small{font-size:.875rem;line-height:1.6;color:var(--muted)}
+.rule{width:56px;height:1px;background:var(--gold);border:0;margin:0}
+
+/* Buttons and links */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:50px;padding:.85rem 1.8rem;font:500 .8125rem/1.1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;text-align:center;border:1px solid var(--navy);border-radius:0;cursor:pointer;transition:background-color .3s,color .3s,border-color .3s}
+.btn svg{width:18px;height:18px}
+.btn-solid{background:var(--navy);color:var(--ivory)}
+.btn-solid:hover{background:var(--navy-hover);border-color:var(--navy-hover)}
+.btn-line{background:transparent;color:var(--navy)}
+.btn-line:hover{background:var(--navy);color:var(--ivory)}
+.btn-block{width:100%}
+.link{display:inline-flex;align-items:center;gap:.5rem;font:500 .8125rem/1.2 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--navy);padding-bottom:.4rem;border-bottom:1px solid var(--gold);transition:border-color .3s;cursor:pointer;background:none;border-top:0;border-left:0;border-right:0;padding-inline:0}
+.link:hover{border-bottom-color:var(--navy)}
+.text-btn{background:none;border:0;padding:0;cursor:pointer;font-size:.8125rem;color:var(--muted);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:.25em}
+.text-btn:hover{color:var(--navy)}
+.icon-btn{position:relative;display:inline-grid;place-items:center;width:44px;height:44px;border:0;background:transparent;color:var(--navy);cursor:pointer;flex:none}
+.icon-btn svg{width:21px;height:21px}
+.badge{position:absolute;top:5px;right:2px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:var(--navy);color:var(--ivory);font:500 .625rem/17px var(--font-sans);text-align:center}
+.badge:empty{display:none}
+.tag{display:inline-block;padding:.38rem .6rem;border:1px solid var(--gold);font:500 .625rem/1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink)}
+
+/* Header */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--beige) 95%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid color-mix(in srgb,var(--gold) 45%,transparent)}
+.hdr-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;min-height:var(--hdr);gap:1rem}
+.hdr-left{display:flex;align-items:center;gap:2rem;min-width:0}
+.hdr-right{display:flex;align-items:center;justify-content:flex-end;gap:.15rem;min-width:0}
+.nav-main{display:flex;gap:2.1rem}
+.nav-main a,.nav-shop{font:400 .8125rem/1 var(--font-sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--navy);padding-block:.55rem;border-bottom:1px solid transparent;transition:border-color .25s;white-space:nowrap}
+.nav-main a:hover,.nav-shop:hover{border-bottom-color:var(--gold)}
+.nav-main a[aria-current="page"],.nav-shop[aria-current="page"]{border-bottom-color:var(--navy)}
+.nav-shop{font-weight:500;margin-right:1.1rem}
+.brand{display:grid;justify-items:center;gap:.38rem;text-decoration:none;color:var(--navy);padding-block:.6rem}
+.brand-name{font-family:var(--font-display);font-size:1.8rem;line-height:1;letter-spacing:.14em;margin-right:-.14em}
+.brand-sub{font:500 .5625rem/1 var(--font-sans);letter-spacing:.38em;margin-right:-.38em}
+.menu-btn,.only-mobile{display:none}
+@media (max-width:899px){
+  :root{--hdr:66px}
+  .nav-main,.only-desktop{display:none}
+  .menu-btn,.only-mobile{display:inline-grid}
+  .hdr-left{gap:0}
+  .hdr-row{gap:.25rem}
+  .nav-shop{margin-right:.35rem}
+  .brand-name{font-size:1.42rem}
+  .brand-sub{font-size:.5rem}
+}
+@media (max-width:599px){.hide-sm{display:none}}
+
+/* Views */
+.view-enter{animation:viewIn .5s var(--ease) both}
+@keyframes viewIn{from{opacity:.01;transform:translateY(6px)}to{opacity:1;transform:none}}
+.section{padding-block:clamp(4rem,9vw,7.5rem)}
+.section.ivory{background:var(--ivory)}
+.sec-head{display:grid;justify-items:center;text-align:center;gap:1rem;margin-bottom:clamp(2.25rem,5vw,3.75rem)}
+.sec-foot{display:grid;justify-items:center;gap:1.4rem;margin-top:clamp(2.25rem,4vw,3.25rem);text-align:center}
+.page-head{display:grid;justify-items:center;text-align:center;gap:1.1rem;padding-block:clamp(3.25rem,7vw,5.5rem) clamp(2.25rem,4vw,3.25rem)}
+.page-head .copy{max-width:46ch}
+.ph{position:relative;display:block;overflow:hidden;background:var(--ivory)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),opacity .7s ease}
+.ph-45{aspect-ratio:4/5}
+.ph-11{aspect-ratio:1}
+.zoom{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;text-align:inherit}
+figcaption{font:500 .6875rem/1.4 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:.85rem;text-align:center}
+
+/* Hero */
+.hero{background:linear-gradient(180deg,var(--studio-top),var(--studio-bot));overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);align-items:center}
+@media (min-width:900px){.hero-grid{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)}}
+.hero-copy{display:grid;justify-items:center;text-align:center;gap:1.5rem;padding-block:clamp(3rem,8vw,4.5rem) .5rem;animation:rise 1.4s var(--ease) both}
+@media (min-width:900px){.hero-copy{justify-items:start;text-align:left;padding-block:4rem}}
+.hero-brand{font-family:var(--font-display);font-size:clamp(1.05rem,1.7vw,1.3rem);letter-spacing:.3em;margin-right:-.3em;line-height:1}
+.hero-copy .btn{margin-top:.6rem}
+.hero-media{justify-self:center;width:min(100%,660px)}
+.hero-media img{width:100%;height:auto;animation:settle 2.2s var(--ease) both;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%),linear-gradient(180deg,transparent 0,#000 5%,#000 94%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%),linear-gradient(180deg,transparent 0,#000 5%,#000 94%,transparent 100%);mask-composite:intersect}
+@keyframes settle{from{transform:scale(1.035)}to{transform:none}}
+@keyframes rise{from{transform:translateY(10px)}to{transform:none}}
+
+/* Home */
+.duo{display:grid;gap:clamp(1rem,2.4vw,2rem);grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:559px){.duo{grid-template-columns:minmax(0,1fr)}}
+.duo-item{display:grid;gap:1.1rem;text-decoration:none;color:var(--navy)}
+.duo-item:hover .ph img{transform:scale(1.03)}
+.duo-name{font-family:var(--font-serif);font-size:1.2rem;text-align:center}
+.sec-line{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.5;color:var(--navy)}
+.feature{display:grid;gap:clamp(2rem,5vw,5.5rem);align-items:center;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.feature{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.feature.flip > :first-child{order:2}}
+.feature-copy{display:grid;gap:1.5rem;justify-items:start;max-width:520px}
+.feature-copy .copy{font-family:var(--font-serif);color:var(--navy);font-size:1.125rem;line-height:1.8}
+.feature-media{width:100%;max-width:620px;justify-self:center}
+
+/* Story */
+.portrait{width:min(100%,600px);margin-inline:auto}
+.read{max-width:680px;margin-inline:auto;display:grid;gap:clamp(3.25rem,7vw,5rem)}
+.chapter{display:grid;gap:1.3rem}
+.chapter p{font-family:var(--font-serif);font-size:1.125rem;line-height:1.9;color:var(--navy)}
+.pull{display:grid;justify-items:center;text-align:center;gap:1rem;padding-block:clamp(2.5rem,6vw,3.5rem);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.pull-lead{font-family:var(--font-serif);font-size:1.0625rem;color:var(--muted)}
+.pull blockquote p{font-family:var(--font-display);font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.12}
+.pull .cite{font:500 .75rem/1.2 var(--font-sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.sketch-fig{max-width:1080px;margin-inline:auto}
+.sketch-fig .zoom{background:var(--ivory);padding:clamp(.5rem,2vw,1.25rem)}
+.sign{display:grid;justify-items:center;gap:1.2rem;text-align:center}
+.sign p{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.25rem,2.4vw,1.55rem);line-height:1.6;max-width:32ch}
+.sign .who{font:500 .75rem/1.2 var(--font-sans);font-style:normal;letter-spacing:.24em;text-transform:uppercase}
+.sign img{width:72px;height:72px}
+
+/* Design */
+.seg{display:inline-flex;border:1px solid var(--navy)}
+.seg button{min-height:44px;padding:.6rem 1.25rem;border:0;background:transparent;font:500 .75rem/1 var(--font-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--navy);cursor:pointer;transition:background-color .25s,color .25s}
+.seg button[aria-pressed="true"]{background:var(--navy);color:var(--ivory)}
+.views{display:grid;gap:clamp(1rem,2vw,1.5rem);grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:640px){.views{grid-template-columns:minmax(0,1fr)}}
+.views .zoom:hover img,.closeups .zoom:hover img{transform:scale(1.03)}
+.build{border-top:1px solid var(--gold)}
+.build-row{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:.6rem 3rem;padding-block:1.7rem;border-bottom:1px solid var(--line)}
+@media (max-width:640px){.build-row{grid-template-columns:minmax(0,1fr)}}
+.build-row h3{font-family:var(--font-serif);font-size:1.25rem;line-height:1.35}
+.build-row p{color:var(--muted);max-width:58ch}
+.woven{display:inline-grid;justify-items:center;gap:.45rem;margin-top:1rem;padding:1rem 1.8rem;background:var(--navy);color:var(--gold)}
+.woven span:first-child{font-family:var(--font-display);font-size:1.1rem;line-height:1;letter-spacing:.2em;margin-right:-.2em}
+.woven span:last-child{font:500 .5625rem/1 var(--font-sans);letter-spacing:.3em;margin-right:-.3em}
+.ease3{display:grid;gap:2rem 3rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.ease3 > div{display:grid;gap:.6rem;align-content:start;padding-top:1.25rem;border-top:1px solid var(--gold)}
+.ease3 p{color:var(--muted)}
+.closeups{display:grid;gap:clamp(.75rem,1.5vw,1.25rem);grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:640px){.closeups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Shop */
+.grid2{display:grid;gap:clamp(2rem,3vw,2.5rem);grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:700px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.card{display:grid;gap:1.1rem;align-content:start}
+.card-media{position:relative}
+.card-media > a{display:block}
+.card .ph .alt{opacity:0}
+@media (hover:hover){.card:hover .ph .alt{opacity:1}.card:hover .ph img{transform:scale(1.02)}}
+.heart{position:absolute;top:12px;right:12px;z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:color-mix(in srgb,var(--ivory) 88%,transparent);display:grid;place-items:center;cursor:pointer;color:var(--navy);transition:background-color .25s}
+.heart:hover{background:var(--ivory)}
+.heart svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.4}
+.heart[aria-pressed="true"] svg{fill:currentColor}
+.card-meta{display:grid;gap:.35rem;justify-items:start}
+.card-title{font-family:var(--font-serif);font-size:1.2rem;line-height:1.35}
+.card-color{color:var(--muted);font-size:.9375rem}
+.price{font:500 1rem/1.3 var(--font-sans);letter-spacing:.03em}
+.price small{font-weight:400;color:var(--muted);letter-spacing:.02em;margin-left:.45rem;font-size:.8125rem}
+.card .link{margin-top:.45rem}
+
+/* Product */
+.crumbs{display:flex;gap:.6rem;flex-wrap:wrap;padding-top:1.5rem;font:400 .75rem/1.4 var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--navy)}
+.pdp{display:grid;gap:clamp(1.75rem,4vw,4rem);grid-template-columns:minmax(0,1fr);grid-template-areas:"gallery" "info" "acc";padding-block:1.25rem clamp(4rem,8vw,6.5rem)}
+@media (min-width:960px){.pdp{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-areas:"gallery info" "acc info";align-items:start}.pdp-info{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--hdr) + 24px)}}
+.gallery{grid-area:gallery;min-width:0}
+.pdp-info{grid-area:info;display:grid;gap:1.6rem;align-content:start;min-width:0}
+.pdp-acc{grid-area:acc;min-width:0}
+.stage{position:relative;aspect-ratio:4/5;max-width:100%;background:var(--ivory);overflow:hidden;touch-action:pan-y}
+.stage-img{position:absolute;inset:0;display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.stage-img img{width:100%;height:100%;object-fit:cover}
+.stage-details{position:absolute;inset:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:4px;background:var(--ivory)}
+.stage-details button{position:relative;overflow:hidden;padding:0;border:0;background:var(--navy);cursor:zoom-in}
+.stage-details img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.stage-details button:hover img{transform:scale(1.04)}
+.stage-details span{position:absolute;left:8px;bottom:8px;padding:.3rem .5rem;background:color-mix(in srgb,var(--ivory) 90%,transparent);font:500 .625rem/1 var(--font-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--navy)}
+.g-arrow{position:absolute;top:50%;z-index:2;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:color-mix(in srgb,var(--ivory) 86%,transparent);display:grid;place-items:center;cursor:pointer;color:var(--navy)}
+.g-arrow:hover{background:var(--ivory)}
+.g-arrow svg{width:20px;height:20px}
+.g-prev{left:12px}
+.g-next{right:12px}
+.g-count{position:absolute;right:12px;bottom:12px;z-index:2;padding:.35rem .55rem;background:color-mix(in srgb,var(--ivory) 86%,transparent);font:500 .6875rem/1 var(--font-sans);letter-spacing:.14em}
+.thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem;margin-top:.8rem}
+.thumb{display:grid;gap:.45rem;padding:0;border:0;background:none;cursor:pointer;text-align:center;font:500 .625rem/1.2 var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.thumb .t-img{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ivory);outline:1px solid transparent;outline-offset:2px;transition:outline-color .25s}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb[aria-current="true"]{color:var(--navy)}
+.thumb[aria-current="true"] .t-img{outline-color:var(--navy)}
+.pdp-title{font-family:var(--font-display);font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.12}
+.pdp-price{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.pdp-price strong{font:500 1.3rem/1 var(--font-sans);letter-spacing:.03em}
+.opt{display:grid;gap:.8rem}
+.opt-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.opt-name{font:500 .75rem/1.2 var(--font-sans);letter-spacing:.18em;text-transform:uppercase}
+.opt-val{color:var(--muted);font-size:.9375rem}
+.swatches{display:flex;gap:.5rem}
+.swatch{width:46px;height:46px;border-radius:50%;padding:0;border:1px solid transparent;background:transparent;display:grid;place-items:center;cursor:pointer;transition:border-color .2s}
+.swatch span{width:32px;height:32px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),0 0 0 1px var(--line)}
+.swatch[aria-pressed="true"]{border-color:var(--navy)}
+.sizes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.5rem}
+.size{min-height:48px;border:1px solid var(--line);background:var(--ivory);color:var(--navy);font:500 .9375rem/1 var(--font-sans);cursor:pointer;transition:border-color .2s,background-color .2s,color .2s}
+.size:hover{border-color:var(--navy)}
+.size[aria-pressed="true"]{background:var(--navy);color:var(--ivory);border-color:var(--navy)}
+.sizes.need .size{border-color:var(--alert)}
+.need-msg{color:var(--alert);font-size:.875rem;min-height:0}
+.need-msg:empty{display:none}
+.qty{display:inline-grid;grid-template-columns:44px 48px 44px;align-items:center;border:1px solid var(--line);background:var(--ivory);width:max-content}
+.qty button{height:46px;border:0;background:transparent;cursor:pointer;display:grid;place-items:center;color:var(--navy)}
+.qty button:disabled{opacity:.35;cursor:default}
+.qty button svg{width:14px;height:14px}
+.qty output{text-align:center;font:500 1rem/1 var(--font-sans)}
+.qty.sm{grid-template-columns:36px 38px 36px}
+.qty.sm button{height:36px}
+.actions{display:grid;gap:.65rem}
+.demo{font-size:.8125rem;line-height:1.6;color:var(--muted)}
+.acc{border-top:1px solid var(--gold)}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:56px;padding-block:1rem;cursor:pointer;font:500 .8125rem/1.2 var(--font-sans);letter-spacing:.18em;text-transform:uppercase}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";width:9px;height:9px;border-right:1px solid var(--navy);border-bottom:1px solid var(--navy);transform:rotate(45deg) translateY(-3px);transition:transform .3s var(--ease);flex:none}
+.acc details[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+.acc-body{display:grid;gap:.9rem;padding-bottom:1.5rem;color:var(--muted);max-width:62ch}
+.acc-body dl{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:.6rem 1.25rem}
+.acc-body dt{color:var(--navy);font-weight:500}
+@media (max-width:420px){.acc-body dl{grid-template-columns:minmax(0,1fr)}.acc-body dd{margin-bottom:.4rem}}
+.fill{background:color-mix(in srgb,var(--gold) 20%,transparent);color:var(--navy);padding:.05rem .35rem}
+
+/* Forms */
+.form{display:grid;gap:1rem;width:100%;max-width:560px;margin-inline:auto}
+.field{display:grid;gap:.4rem;text-align:left}
+.field label{font:500 .6875rem/1.2 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.control{width:100%;min-height:50px;padding:.75rem .9rem;border:1px solid var(--line);border-radius:0;background:var(--ivory);color:var(--navy);font:400 1rem/1.4 var(--font-sans);-webkit-appearance:none;appearance:none}
+.control:focus-visible{outline:2px solid var(--navy);outline-offset:1px}
+textarea.control{min-height:150px;resize:vertical}
+.status{background:var(--ivory);border:1px solid var(--gold);padding:.9rem 1rem;font-size:.9375rem;line-height:1.55;text-align:left}
+.status:empty{display:none}
+.status.err{border-color:var(--alert);color:var(--alert)}
+select.control{padding-right:2.6rem;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,var(--navy) 50%),linear-gradient(135deg,var(--navy) 50%,transparent 50%);background-position:calc(100% - 21px) 52%,calc(100% - 16px) 52%;background-size:5px 5px;background-repeat:no-repeat}
+select.control:invalid{color:var(--muted)}
+select.control option{color:var(--navy)}
+
+/* Private tailoring and collaborations */
+.inquiry{max-width:720px;margin-inline:auto;display:grid;gap:clamp(2rem,4vw,2.75rem);padding-top:clamp(.5rem,2vw,1.5rem)}
+.inquiry-head{display:grid;justify-items:center;text-align:center;gap:1.1rem}
+.inquiry-head p{font-family:var(--font-serif);font-size:1.0625rem;line-height:1.85;color:var(--navy);max-width:62ch}
+.inquiry .form{max-width:none;gap:1.3rem;padding-top:clamp(2rem,4vw,2.75rem);border-top:1px solid var(--gold)}
+.hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.done{display:grid;justify-items:center;gap:1rem;text-align:center;padding-block:clamp(2.5rem,6vw,3.5rem);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.done img{width:56px;height:56px}
+.done p{color:var(--muted);max-width:44ch}
+
+/* Footer */
+.ftr{background:var(--ivory);border-top:1px solid color-mix(in srgb,var(--gold) 55%,transparent);padding-block:clamp(3rem,6vw,4.5rem) 2rem;text-align:center}
+.ftr-inner{display:grid;justify-items:center;gap:1.2rem}
+.ftr-logo{width:60px;height:60px}
+.ftr-mark{display:grid;justify-items:center;gap:.45rem}
+.ftr-name{font-family:var(--font-display);font-size:1.6rem;line-height:1;letter-spacing:.14em;margin-right:-.14em}
+.ftr-sub{font:500 .5625rem/1 var(--font-sans);letter-spacing:.38em;margin-right:-.38em}
+.ftr-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem 2rem;margin-top:.6rem}
+.ftr-nav a{font:400 .8125rem/1 var(--font-sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:.7rem 0;display:inline-block}
+.ftr-nav a:hover{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:.4em}
+.ftr-legal{font-size:.8125rem;color:var(--muted);margin-top:1rem;max-width:60ch}
+.ftr-legal a{color:var(--muted)}
+
+/* Overlays */
+.overlay{position:fixed;inset:0;z-index:100;background:var(--scrim);display:grid}
+.overlay.right{justify-items:end}
+.overlay.left{justify-items:start}
+.overlay.top{align-items:start}
+.overlay.center{place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));overflow:auto}
+.drawer{width:min(100%,440px);height:100%;background:var(--ivory);display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);animation:slideR .45s var(--ease) both}
+.overlay.left .drawer{padding-left:env(safe-area-inset-left,0px);animation-name:slideL}
+.overlay.right .drawer{padding-right:env(safe-area-inset-right,0px)}
+@keyframes slideR{from{transform:translateX(24px)}to{transform:none}}
+@keyframes slideL{from{transform:translateX(-24px)}to{transform:none}}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.8rem .8rem .8rem 1.5rem;border-bottom:1px solid var(--line)}
+.drawer-head h2{font:500 .8125rem/1.2 var(--font-sans);letter-spacing:.2em;text-transform:uppercase}
+.drawer-body{overflow:auto;padding:1.5rem;display:grid;gap:1.4rem;align-content:start}
+.drawer-foot{padding:1.25rem 1.5rem 1.5rem;border-top:1px solid var(--line);display:grid;gap:.75rem}
+.drawer-foot:empty{display:none}
+.empty{display:grid;justify-items:center;gap:1rem;text-align:center;padding-block:2rem}
+.empty img{width:64px;height:64px}
+.empty p{color:var(--muted);max-width:28ch}
+.line-item{display:grid;grid-template-columns:86px minmax(0,1fr);gap:1rem;align-items:start}
+.line-item .ph{aspect-ratio:4/5}
+.li-top{display:flex;justify-content:space-between;align-items:baseline;gap:.75rem}
+.li-top .price{white-space:nowrap}
+.li-name{font-family:var(--font-serif);font-size:1rem;line-height:1.35}
+.li-name a{text-decoration:none}
+.li-name a:hover{text-decoration:underline;text-decoration-color:var(--gold)}
+.li-meta{color:var(--muted);font-size:.875rem;margin-top:.2rem}
+.li-actions{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.8rem}
+.sum{display:flex;justify-content:space-between;align-items:baseline;font:500 1rem/1.2 var(--font-sans);letter-spacing:.03em}
+.sum span:first-child{font-size:.8125rem;letter-spacing:.18em;text-transform:uppercase}
+.checkout-note{background:var(--beige);border:1px solid var(--line);padding:1rem;font-size:.875rem;line-height:1.6}
+.menu-links{display:grid;gap:.15rem}
+.menu-links a{font-family:var(--font-display);font-size:1.7rem;line-height:1.2;text-decoration:none;padding-block:.55rem;letter-spacing:.03em}
+.menu-links a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:1px;text-underline-offset:.25em}
+.menu-tools{display:grid;gap:.2rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+.menu-tools button,.menu-tools a{display:flex;align-items:center;gap:.8rem;min-height:48px;padding:0;border:0;background:none;cursor:pointer;font:400 .875rem/1 var(--font-sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--navy)}
+.menu-tools svg{width:20px;height:20px}
+.search-panel{width:100%;background:var(--ivory);padding:max(1rem,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 1.75rem max(16px,env(safe-area-inset-left,0px));animation:slideD .4s var(--ease) both}
+@keyframes slideD{from{transform:translateY(-12px)}to{transform:none}}
+.search-row{max-width:860px;margin-inline:auto;display:flex;gap:.5rem;align-items:center;border-bottom:1px solid var(--navy)}
+.search-row > svg{width:20px;height:20px;flex:none}
+.search-row input{flex:1;min-width:0;border:0;background:transparent;font:400 1.3rem/1.4 var(--font-serif);padding:.9rem .25rem;color:var(--navy)}
+.search-row input:focus{outline:none}
+.search-row:focus-within{border-bottom-width:2px}
+.results{max-width:860px;margin:1rem auto 0;display:grid;gap:.15rem}
+.results .label{padding:.25rem .6rem .5rem}
+.result{display:grid;grid-template-columns:52px minmax(0,1fr);gap:1rem;align-items:center;width:100%;padding:.55rem .6rem;border:0;background:none;text-align:left;text-decoration:none;color:var(--navy);cursor:pointer}
+.result:hover,.result:focus-visible{background:var(--beige)}
+.result .ph{aspect-ratio:1}
+.result strong{display:block;font-family:var(--font-serif);font-weight:400;font-size:1.05rem;line-height:1.3}
+.result small{display:block;color:var(--muted);font-size:.875rem;line-height:1.4}
+.no-results{color:var(--muted);padding:.5rem .6rem}
+.modal{position:relative;width:min(100%,960px);max-height:100%;overflow:auto;background:var(--ivory);padding:clamp(1rem,3vw,2rem);display:grid;gap:1rem}
+.modal-head{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.modal-head h2{font:500 .8125rem/1.2 var(--font-sans);letter-spacing:.2em;text-transform:uppercase}
+.lightbox{position:fixed;inset:0;z-index:120;background:var(--ivory);display:grid;grid-template-rows:auto minmax(0,1fr) auto;padding:max(6px,env(safe-area-inset-top,0px)) max(6px,env(safe-area-inset-right,0px)) max(14px,env(safe-area-inset-bottom,0px)) max(6px,env(safe-area-inset-left,0px))}
+.lb-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.25rem .5rem}
+.lb-count{font:500 .75rem/1 var(--font-sans);letter-spacing:.16em}
+.lb-tools{display:flex;gap:.25rem}
+.lb-stage{position:relative;overflow:hidden;display:grid;place-items:center;min-height:0}
+.lb-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;transform-origin:var(--ox,50%) var(--oy,50%);transition:transform .35s var(--ease);cursor:zoom-in}
+.lb-stage.zoomed img{transform:scale(2.2);cursor:zoom-out}
+.lb-stage .g-arrow{background:color-mix(in srgb,var(--beige) 80%,transparent)}
+.lb-cap{text-align:center;font:500 .6875rem/1.5 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding:.75rem 1rem 0}
+.toast{position:fixed;left:50%;bottom:max(24px,env(safe-area-inset-bottom,0px));z-index:130;transform:translate(-50%,16px);opacity:0;background:var(--navy);color:var(--ivory);padding:.85rem 1.25rem;font-size:.875rem;letter-spacing:.04em;transition:opacity .3s,transform .3s var(--ease);pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#home" data-skip>Skip to content</a>
+
+<header class="hdr">
+  <div class="wrap hdr-row">
+    <div class="hdr-left">
+      <button type="button" class="icon-btn menu-btn" data-open="menu" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3.5 7.5h17M3.5 12h17M3.5 16.5h17"/></svg>
+      </button>
+      <nav class="nav-main" aria-label="Main">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#story" data-nav="story">Our Story</a>
+        <a href="#design" data-nav="design">The Design</a>
+      </nav>
+      <button type="button" class="icon-btn only-mobile" data-open="search" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2l5 5"/></svg>
+      </button>
+    </div>
+    <a class="brand" href="#home" aria-label="ROMARE, Ruslan Alam, home">
+      <span class="brand-name">ROMARE</span>
+      <span class="brand-sub">RUSLAN ALAM</span>
+    </a>
+    <div class="hdr-right">
+      <a class="nav-shop" href="#shop" data-nav="shop">Shop</a>
+      <button type="button" class="icon-btn only-desktop" data-open="search" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2l5 5"/></svg>
+      </button>
+      <button type="button" class="icon-btn hide-sm" data-open="wishlist" data-count-label="Wishlist" aria-label="Wishlist">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 20.2s-7.6-4.6-7.6-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.6 2.6c0 5.6-7.6 10.2-7.6 10.2z"/></svg>
+        <span class="badge" data-badge="wishlist"></span>
+      </button>
+      <button type="button" class="icon-btn" data-open="bag" data-count-label="Shopping bag" aria-label="Shopping bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M5.2 8.4h13.6l-1.1 12H6.3z"/><path d="M8.8 8.4V7a3.2 3.2 0 0 1 6.4 0v1.4"/></svg>
+        <span class="badge" data-badge="bag"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- HOME -->
+<div data-view="home">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 class="title-xl" id="hero-title">The Art of<br>Dressing Well</h1>
+        <hr class="rule">
+        <p class="hero-brand">ROMARE</p>
+        <a class="btn btn-line" href="#shop">Discover the Collection</a>
+      </div>
+      <div class="hero-media">
+        <img src="img/navy-front.webp" srcset="img/navy-front-m.webp 640w, img/navy-front.webp 1122w" sizes="(min-width: 900px) 660px, 100vw" width="1122" height="1402" fetchpriority="high" alt="The ROMARE integrated wool cardigan in navy on a tailor's mannequin, with the knitted quarter-zip open over a white shirt collar">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="first-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="title-l" id="first-title">The First Collection</h2></div>
+      <div class="duo">
+        <a class="duo-item" href="#product-navy">
+          <div class="ph ph-45"><img src="img/navy-front-m.webp" srcset="img/navy-front-m.webp 640w, img/navy-front.webp 1122w" sizes="(min-width: 560px) 48vw, 100vw" width="1122" height="1402" alt="Navy wool cardigan, front view" loading="lazy"></div>
+          <p class="duo-name">Navy Wool Cardigan</p>
+        </a>
+        <a class="duo-item" href="#product-gray">
+          <div class="ph ph-45"><img src="img/gray-front-m.webp" srcset="img/gray-front-m.webp 640w, img/gray-front.webp 1122w" sizes="(min-width: 560px) 48vw, 100vw" width="1122" height="1402" alt="Gray wool cardigan, front view" loading="lazy"></div>
+          <p class="duo-name">Gray Wool Cardigan</p>
+        </a>
+      </div>
+      <div class="sec-foot">
+        <p class="sec-line">Two classic garments, thoughtfully integrated into one.</p>
+        <a class="link" href="#shop">Explore the Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ivory" aria-labelledby="behind-title">
+    <div class="wrap feature">
+      <div class="feature-media"><div class="ph ph-11"><img src="img/founder-m.webp" srcset="img/founder-m.webp 720w, img/founder.webp 1254w" sizes="(min-width: 900px) 620px, 100vw" width="1254" height="1254" alt="Ruslan Alam, founder of ROMARE, in a black dinner jacket and bow tie" loading="lazy"></div></div>
+      <div class="feature-copy">
+        <h2 class="title-m" id="behind-title">The Story Behind ROMARE</h2>
+        <p class="copy">“From sketching cars and designing homes to imagining my own clothing brand, creativity has always been part of who I am. ROMARE is the beginning of turning that passion into something tangible.”</p>
+        <a class="link" href="#story">Read My Story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="two-title">
+    <div class="wrap feature flip">
+      <div class="feature-media"><div class="ph ph-45"><img src="img/navy-open-m.webp" srcset="img/navy-open-m.webp 640w, img/navy-open.webp 1122w" sizes="(min-width: 900px) 620px, 100vw" width="1122" height="1402" alt="The navy cardigan partly opened, showing the permanently integrated rib-knit quarter-zip and the inside pockets" loading="lazy"></div></div>
+      <div class="feature-copy">
+        <h2 class="title-m" id="two-title">One Garment.<br>Two Classics.</h2>
+        <p class="copy">A traditional wool cardigan and a knitted quarter-zip, permanently brought together through one thoughtful design.</p>
+        <a class="link" href="#design">Explore the Design</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- OUR STORY -->
+<div data-view="story" hidden>
+  <header class="page-head wrap">
+    <p class="label">Our Story</p>
+    <h1 class="title-l">The Story Behind ROMARE</h1>
+  </header>
+  <div class="wrap">
+    <figure class="portrait">
+      <div class="ph ph-11"><img src="img/founder.webp" srcset="img/founder-m.webp 720w, img/founder.webp 1254w" sizes="(min-width: 640px) 600px, 100vw" width="1254" height="1254" alt="Ruslan Alam, founder of ROMARE, in a black dinner jacket and bow tie" loading="lazy"></div>
+      <figcaption>Ruslan Alam, founder</figcaption>
+    </figure>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="read">
+        <section class="chapter" aria-labelledby="ch1">
+          <h2 class="label" id="ch1">I. Beginnings</h2>
+          <p>Growing up, I always had a passion for design. It began with cars. I loved sketching different wheel designs, headlights, body shapes, and imagining how existing designs could be improved.</p>
+          <p>Eventually, that curiosity expanded into architecture. I spent countless hours designing homes on paper, through digital applications, and even building them virtually in Fortnite.</p>
+        </section>
+        <section class="chapter" aria-labelledby="ch2">
+          <h2 class="label" id="ch2">II. Family and Mentors</h2>
+          <p>As I grew older, I became increasingly involved in academics, business, and other responsibilities. Coming from a fourth-generation business family, I grew up with the expectation of eventually contributing to and expanding our family's business.</p>
+          <p>My father has always been one of my greatest mentors. Beyond business, he taught me the importance of manners, character, discipline, and presenting myself well.</p>
+          <p>I developed a deep appreciation for classic menswear: well-fitted shirts, ties, suits, polished shoes, watches, and the small details that create a distinguished appearance.</p>
+        </section>
+        <div class="pull">
+          <p class="pull-lead">One saying has remained particularly meaningful to me:</p>
+          <blockquote><p>“Manners maketh man.”</p></blockquote>
+          <p class="cite">William of Wykeham</p>
+        </div>
+        <section class="chapter" aria-labelledby="ch3">
+          <h2 class="label" id="ch3">III. Dressing Well</h2>
+          <p>To me, dressing well is not simply about appearing wealthy or wearing expensive clothes. It is about confidence, self-respect, and how we carry ourselves.</p>
+          <p>I also find great satisfaction in meeting people, exchanging ideas, teaching, advising, and helping others. I hope that through my work, I can encourage men to feel confident in how they present themselves, while remembering that character and manners are what truly define a gentleman.</p>
+        </section>
+        <section class="chapter" aria-labelledby="ch4">
+          <h2 class="label" id="ch4">IV. The First Design</h2>
+          <p>Although my long-term ambitions remain connected to entrepreneurship, global trade, and the maritime industry, my love for design has never disappeared.</p>
+          <p>I had always imagined creating my own menswear brand. For years, it remained a dream.</p>
+          <p>When I began working on a product-design project through my engineering studies, I finally had an opportunity to explore that dream.</p>
+          <p>I started by thinking about something I enjoyed wearing myself: quarter-zips paired with shirts and ties. During colder weather, I would often add a cardigan or jacket over them.</p>
+          <p>I wondered whether I could combine the appearance and practicality of these garments into one.</p>
+          <p>That idea led to my first integrated quarter-zip cardigan concept.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <figure class="sketch-fig">
+      <button type="button" class="zoom" data-zoom-single data-src="img/sketch.webp" data-w="1181" data-h="516" data-alt="The original concept sketch: front view, back view, and inside view of the integrated quarter-zip cardigan" data-cap="The original concept sketch" aria-label="Enlarge the original concept sketch"><img src="img/sketch.webp" width="1181" height="516" alt="The original concept sketch: front view with the integrated quarter-zip, button closure and side pockets; back view; inside view with the quarter-zip inner layer and inside pockets" loading="lazy"></button>
+      <figcaption>The original concept sketch</figcaption>
+    </figure>
+  </div>
+  <div class="section">
+    <div class="wrap sign">
+      <img src="img/logo-s.webp" width="160" height="160" alt="" loading="lazy">
+      <p>ROMARE is the beginning of my journey to bring together creativity, simplicity, and the art of dressing well.</p>
+      <p class="who">Ruslan Alam</p>
+    </div>
+  </div>
+</div>
+
+<!-- THE DESIGN -->
+<div data-view="design" hidden>
+  <header class="page-head wrap">
+    <p class="label">The Design</p>
+    <h1 class="title-l">Two Classics.<br>One Garment.</h1>
+    <p class="copy">A wool cardigan outside and a knitted quarter-zip within, permanently joined as one garment. Nothing detaches.</p>
+  </header>
+  <section class="wrap" aria-labelledby="views-title">
+    <h2 class="sr-only" id="views-title">Front, back, side and open-inside views</h2>
+    <div class="sec-head" style="margin-bottom:1.75rem">
+      <div class="seg" role="group" aria-label="Color">
+        <button type="button" data-design-color="navy" aria-pressed="true">Navy</button>
+        <button type="button" data-design-color="gray" aria-pressed="false">Charcoal Gray</button>
+      </div>
+    </div>
+    <div class="views" data-design-views></div>
+  </section>
+
+  <section class="section" aria-labelledby="build-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="title-m" id="build-title">Construction</h2></div>
+      <div class="build">
+        <div class="build-row"><h3>Outer Structure</h3><p>A smooth wool-blend cardigan covering the shoulders, sleeves, back, and outer front.</p></div>
+        <div class="build-row"><h3>Inner Structure</h3><p>A permanently attached rib-knit quarter-zip chest panel, with a short zipper running only from the neck to the upper chest.</p></div>
+        <div class="build-row"><h3>Buttons</h3><p>Three visible front buttons. The upper two form the main closure, and the lowest sits near the hem.</p></div>
+        <div class="build-row"><h3>Pockets</h3><p>Two exterior pockets, with discreet storage pockets inside.</p></div>
+        <div class="build-row"><h3>Branding</h3><div><p>A small gold-and-navy embroidered mare-head emblem on the left chest. The interior label reads:</p><span class="woven" aria-label="ROMARE, RUSLAN ALAM"><span>ROMARE</span><span>RUSLAN ALAM</span></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ivory" aria-labelledby="ease-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="title-m" id="ease-title">Made to Be Easy</h2></div>
+      <div class="ease3">
+        <div><h3 class="title-s">One Layer, Finished</h3><p>The look of a quarter-zip under a cardigan, in a single garment.</p></div>
+        <div><h3 class="title-s">Shirt and Tie Ready</h3><p>The short zip opens at the neck to frame a collar or a knot.</p></div>
+        <div><h3 class="title-s">Essentials at Hand</h3><p>Two outer pockets, and discreet pockets inside for everyday essentials.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="close-title">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="title-m" id="close-title">In Detail</h2></div>
+      <div class="closeups" data-design-details></div>
+      <div class="sec-foot"><a class="btn btn-solid" href="#shop">Shop the Cardigan</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- SHOP -->
+<div data-view="shop" hidden>
+  <header class="page-head wrap">
+    <p class="label">Shop</p>
+    <h1 class="title-l">The First Collection</h1>
+    <p class="copy">One cardigan in two colors. Prices are provisional while the prototype is finalized.</p>
+  </header>
+  <section class="wrap" aria-label="Products">
+    <div class="grid2" data-shop-grid></div>
+    <p class="demo" style="text-align:center;margin-top:2.5rem">Demo store. Orders and payments open once Shopify checkout is configured.</p>
+  </section>
+  <div class="section" style="padding-top:0"></div>
+</div>
+
+<!-- PRODUCT -->
+<div data-view="product" hidden>
+  <div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="#shop">Shop</a><span aria-hidden="true">/</span><span aria-current="page">ROMARE Integrated Wool Cardigan</span></nav></div>
+  <div class="wrap pdp">
+    <div class="gallery" aria-label="Product images" role="region">
+      <div class="stage" data-stage>
+        <button type="button" class="stage-img" data-stage-img aria-label="Enlarge image"><img alt="" width="1122" height="1402"></button>
+        <div class="stage-details" data-stage-details hidden></div>
+        <button type="button" class="g-arrow g-prev" data-step="-1" aria-label="Previous view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M14.5 5.5L8 12l6.5 6.5"/></svg></button>
+        <button type="button" class="g-arrow g-next" data-step="1" aria-label="Next view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5"/></svg></button>
+        <span class="g-count" data-count aria-hidden="true"></span>
+      </div>
+      <div class="thumbs" data-thumbs role="group" aria-label="Choose a view"></div>
+    </div>
+
+    <div class="pdp-info">
+      <div style="display:grid;gap:.9rem">
+        <p class="label">The First Collection</p>
+        <h1 class="pdp-title">ROMARE Integrated Wool Cardigan</h1>
+        <div class="pdp-price"><strong data-price>$150 USD</strong><span class="tag">Provisional</span></div>
+        <p class="small">Indicative prototype price, subject to confirmation.</p>
+      </div>
+      <div class="opt">
+        <div class="opt-head"><span class="opt-name">Color</span><span class="opt-val" data-color-name>Navy Blue</span></div>
+        <div class="swatches" role="group" aria-label="Color" data-swatches></div>
+      </div>
+      <div class="opt">
+        <div class="opt-head"><span class="opt-name">Size</span><button type="button" class="text-btn" data-open="sizeguide">Size Guide</button></div>
+        <div class="sizes" role="group" aria-label="Size" data-sizes></div>
+        <p class="need-msg" data-need role="alert"></p>
+      </div>
+      <div class="opt">
+        <div class="opt-head"><span class="opt-name" id="qty-label">Quantity</span></div>
+        <div class="qty" role="group" aria-labelledby="qty-label">
+          <button type="button" data-qty="-1" aria-label="Decrease quantity"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 8h10"/></svg></button>
+          <output data-qty-out aria-live="polite">1</output>
+          <button type="button" data-qty="1" aria-label="Increase quantity"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 8h10M8 3v10"/></svg></button>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn btn-solid btn-block" data-add-bag>Add to Bag</button>
+        <button type="button" class="btn btn-line btn-block" data-pdp-wish aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 20.2s-7.6-4.6-7.6-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.6 2.6c0 5.6-7.6 10.2-7.6 10.2z"/></svg>
+          <span data-wish-label>Add to Wishlist</span>
+        </button>
+      </div>
+      <p class="demo">Demo store. Orders and payments open once Shopify checkout is configured.</p>
+    </div>
+
+    <div class="pdp-acc">
+      <div class="acc">
+        <details open><summary>Description</summary><div class="acc-body"><p>An integrated wool cardigan with a permanently attached knitted quarter-zip, designed to combine classic appearance with convenient everyday wear.</p></div></details>
+        <details><summary>Materials &amp; Construction</summary><div class="acc-body">
+          <dl>
+            <dt>Outer</dt><dd>Proposed smooth wool-blend fabric. Composition to be confirmed.</dd>
+            <dt>Center panel</dt><dd>Rib-knit quarter-zip, permanently attached.</dd>
+            <dt>Zipper</dt><dd>Short, from the neck to the upper chest.</dd>
+            <dt>Buttons</dt><dd>Three. The upper two close the cardigan; the lowest sits near the hem.</dd>
+            <dt>Pockets</dt><dd>Two exterior pockets and discreet interior pockets.</dd>
+            <dt>Emblem</dt><dd>Embroidered gold-and-navy mare head on the left chest.</dd>
+            <dt>Label</dt><dd><span class="woven" style="margin-top:0" aria-label="ROMARE, RUSLAN ALAM"><span>ROMARE</span><span>RUSLAN ALAM</span></span></dd>
+          </dl>
+        </div></details>
+        <details><summary>Size &amp; Fit</summary><div class="acc-body"><p>Available in S, M, L, XL and XXL.</p><p>The size guide is provisional. Final garment measurements will be confirmed after prototype fitting.</p><p><button type="button" class="link" data-open="sizeguide">View the Size Guide</button></p></div></details>
+        <details><summary>Care &amp; Delivery</summary><div class="acc-body">
+          <!-- Editable placeholders: replace once fabric care and shipping policies are set. -->
+          <dl>
+            <dt>Care</dt><dd><span class="fill">Care instructions will be added once the fabric is confirmed.</span></dd>
+            <dt>Delivery</dt><dd><span class="fill">Shipping regions, costs and times to be confirmed.</span></dd>
+            <dt>Returns</dt><dd><span class="fill">Returns policy to be confirmed.</span></dd>
+          </dl>
+        </div></details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div data-view="contact" hidden>
+  <header class="page-head wrap">
+    <p class="label">Contact</p>
+    <h1 class="title-l">Get in Touch</h1>
+    <p class="copy">Questions about ROMARE or the first collection are always welcome.</p>
+  </header>
+  <section class="wrap" aria-labelledby="tailor-title">
+    <div class="inquiry">
+      <div class="inquiry-head">
+        <h2 class="title-m" id="tailor-title">Private Tailoring &amp; Collaborations</h2>
+        <p>At ROMARE, we believe that great clothing begins with individuality and attention to detail. As we continue developing our first collection, we welcome inquiries from individuals interested in future personalized tailoring, as well as designers, manufacturers, and creative partners who share our appreciation for timeless menswear.</p>
+        <p>Whether you have a particular design in mind or an opportunity to collaborate, we would be pleased to hear from you.</p>
+      </div>
+      <form class="form" data-inquiry>
+        <div class="field"><label for="iq-name">Full Name</label><input class="control" id="iq-name" name="name" type="text" autocomplete="name" placeholder="Your name" required></div>
+        <div class="field"><label for="iq-email">Email Address</label><input class="control" id="iq-email" name="email" type="email" autocomplete="email" placeholder="Your email" required></div>
+        <div class="field"><label for="iq-type">Inquiry Type</label>
+          <select class="control" id="iq-type" name="inquiry_type" required>
+            <option value="" disabled selected>Select inquiry type</option>
+            <option>Private Tailoring Interest</option>
+            <option>Business Collaboration</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="field"><label for="iq-msg">Message</label><textarea class="control" id="iq-msg" name="message" placeholder="Tell us about your inquiry" required></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="iq-company">Company</label><input id="iq-company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-solid" type="submit" data-inquiry-submit>Submit Inquiry</button>
+        <p class="status" role="status" aria-live="polite" data-inquiry-status></p>
+        <p class="small" style="text-align:center">ROMARE is still in development. Tailoring is a future possibility: an inquiry registers your interest and is not a booking or an order.</p>
+      </form>
+      <div class="done" data-inquiry-done tabindex="-1" hidden>
+        <img src="img/logo-s.webp" width="160" height="160" alt="">
+        <h3 class="title-s">Thank you. Your inquiry has been received.</h3>
+        <p>ROMARE will reply to <strong data-done-email></strong>.</p>
+        <button type="button" class="link" data-inquiry-again>Send Another Inquiry</button>
+      </div>
+    </div>
+  </section>
+  <div class="section" style="padding-top:0"></div>
+</div>
+
+<!-- LEGAL PLACEHOLDERS -->
+<div data-view="privacy" hidden>
+  <header class="page-head wrap">
+    <p class="label">Legal</p>
+    <h1 class="title-l">Privacy</h1>
+    <p class="copy">ROMARE's privacy policy will be published here before the store opens. In this demo, your wishlist and bag are saved only in your own browser. Inquiries sent from the Contact page are delivered to ROMARE by email and used only to reply to you.</p>
+  </header>
+  <div class="section" style="padding-top:0"></div>
+</div>
+<div data-view="terms" hidden>
+  <header class="page-head wrap">
+    <p class="label">Legal</p>
+    <h1 class="title-l">Terms</h1>
+    <p class="copy">Terms of sale, shipping and returns will be published here before launch. No orders or payments can be made in this demo.</p>
+  </header>
+  <div class="section" style="padding-top:0"></div>
+</div>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-inner">
+    <img class="ftr-logo" src="img/logo-s.webp" width="160" height="160" alt="ROMARE mare-head emblem" loading="lazy">
+    <div class="ftr-mark"><p class="ftr-name">ROMARE</p><p class="ftr-sub">RUSLAN ALAM</p></div>
+    <nav class="ftr-nav" aria-label="Footer">
+      <a href="#story">Our Story</a>
+      <a href="#design">The Design</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="ftr-legal"><a href="#privacy">Privacy</a> · <a href="#terms">Terms</a> · © 2026 ROMARE. Images are prototype renders; final garments may differ.</p>
+  </div>
+</footer>
+
+<!-- Menu (mobile) -->
+<div class="overlay left" id="menu" hidden>
+  <div class="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-head"><h2>Menu</h2><button type="button" class="icon-btn" data-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="drawer-body">
+      <nav class="menu-links" aria-label="Menu">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#story" data-nav="story">Our Story</a>
+        <a href="#design" data-nav="design">The Design</a>
+        <a href="#shop" data-nav="shop">Shop</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+      <div class="menu-tools">
+        <button type="button" data-open="wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 20.2s-7.6-4.6-7.6-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.6 2.6c0 5.6-7.6 10.2-7.6 10.2z"/></svg>Wishlist <span data-menu-count></span></button>
+        <button type="button" data-open="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2l5 5"/></svg>Search</button>
+      </div>
+    </div>
+    <div class="drawer-foot"></div>
+  </div>
+</div>
+
+<!-- Search -->
+<div class="overlay top" id="search" hidden>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2l5 5"/></svg>
+      <label class="sr-only" for="q">Search ROMARE</label>
+      <input id="q" type="search" placeholder="Search ROMARE" autocomplete="off" data-autofocus>
+      <button type="button" class="icon-btn" data-close aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="results" data-results aria-live="polite"></div>
+  </div>
+</div>
+
+<!-- Wishlist -->
+<div class="overlay right" id="wishlist" hidden>
+  <div class="drawer" role="dialog" aria-modal="true" aria-labelledby="wish-title">
+    <div class="drawer-head"><h2 id="wish-title">Wishlist</h2><button type="button" class="icon-btn" data-close aria-label="Close wishlist"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="drawer-body" data-wish-body></div>
+    <div class="drawer-foot"></div>
+  </div>
+</div>
+
+<!-- Bag -->
+<div class="overlay right" id="bag" hidden>
+  <div class="drawer" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+    <div class="drawer-head"><h2 id="bag-title">Shopping Bag</h2><button type="button" class="icon-btn" data-close aria-label="Close shopping bag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="drawer-body" data-bag-body></div>
+    <div class="drawer-foot" data-bag-foot></div>
+  </div>
+</div>
+
+<!-- Size guide -->
+<div class="overlay center" id="sizeguide" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="sg-title">
+    <div class="modal-head"><h2 id="sg-title">Size Guide <span class="tag" style="margin-left:.6rem">Provisional</span></h2><button type="button" class="icon-btn" data-close aria-label="Close size guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <button type="button" class="zoom" data-zoom-single data-src="img/size-guide.webp" data-w="1069" data-h="672" data-alt="ROMARE men's size guide: body chest and waist in inches for sizes S to XXL, with how to measure" data-cap="Provisional size guide" aria-label="Enlarge the size guide"><img src="img/size-guide.webp" width="1069" height="672" alt="ROMARE men's size guide. Body chest in inches: S 35 to 37, M 38 to 40, L 42 to 45, XL 46 to 48, XXL 49 to 52. Body waist in inches: S 28 to 30, M 31 to 34, L 35 to 38, XL 40 to 42, XXL 43 to 45. Measure the chest around its fullest part and the waist at the natural waistline." loading="lazy"></button>
+    <p class="small">This is a provisional body-size guide. Final ROMARE garment measurements will be confirmed after prototype fitting.</p>
+  </div>
+</div>
+
+<!-- Image viewer -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <div class="lb-bar">
+    <span class="lb-count"></span>
+    <div class="lb-tools">
+      <button type="button" class="icon-btn lb-zoom" aria-label="Zoom in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.2"/><path d="M15.2 15.2l5 5M10.5 7.8v5.4M7.8 10.5h5.4"/></svg></button>
+      <button type="button" class="icon-btn lb-close" aria-label="Close image viewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="lb-stage">
+    <img alt="">
+    <button type="button" class="g-arrow g-prev lb-prev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M14.5 5.5L8 12l6.5 6.5"/></svg></button>
+    <button type="button" class="g-arrow g-next lb-next" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5"/></svg></button>
+  </div>
+  <p class="lb-cap"></p>
+</div>
+
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+
+  /* ---------- Store setup ----------
+     Demo mode: the bag and wishlist work, but nothing can be ordered or paid.
+     To go live: set STORE.mode to "live", STORE.domain to the Shopify store domain
+     (for example "romare.myshopify.com"), and fill PRODUCT.shopify.variants with each
+     variant ID, keyed "navy-M", "gray-XL" and so on. Checkout then hands the bag to
+     Shopify's secure guest checkout through a cart permalink. */
+  const STORE = { mode: "demo", domain: "", currency: "USD" };
+
+  const PRODUCT = {
+    handle: "romare-integrated-wool-cardigan",
+    title: "ROMARE Integrated Wool Cardigan",
+    price: 150,
+    priceStatus: "provisional",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: {
+      navy: { name: "Navy Blue", hex: "#16243A", route: "product-navy" },
+      gray: { name: "Charcoal Gray", hex: "#56595D", route: "product-gray" }
+    },
+    shopify: { productId: null, variants: {} }
+  };
+
+  const VIEWS = [
+    { key: "front", label: "Front" },
+    { key: "back", label: "Back" },
+    { key: "side", label: "Side" },
+    { key: "open", label: "Inside" },
+    { key: "details", label: "Details" }
+  ];
+  const DETAILS = [
+    { key: "zip", label: "Quarter-zip" },
+    { key: "button", label: "Button" },
+    { key: "logo", label: "Emblem" },
+    { key: "pocket", label: "Front pocket" },
+    { key: "cuff", label: "Cuff" },
+    { key: "inside", label: "Inside pocket" }
+  ];
+  const VIEW_ALT = {
+    front: "front view on a tailor's mannequin",
+    back: "back view on a tailor's mannequin",
+    side: "side view on a tailor's mannequin",
+    open: "partly opened, showing the integrated quarter-zip and inside pockets"
+  };
+  const DETAIL_ALT = {
+    zip: "close-up of the knitted quarter-zip open over a shirt collar",
+    button: "close-up of a front button",
+    logo: "close-up of the embroidered mare-head emblem",
+    pocket: "close-up of an exterior front pocket",
+    cuff: "close-up of the ribbed cuff",
+    inside: "close-up of an inside pocket with the ROMARE label"
+  };
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const money = (n) => "$" + n.toLocaleString("en-US", { minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: 2 }) + " USD";
+  const viewSrc = (c, k, m) => `img/${c}-${k}${m ? "-m" : ""}.webp`;
+  const viewSet = (c, k) => `${viewSrc(c, k, true)} 640w, ${viewSrc(c, k)} 1122w`;
+  const colorName = (c) => PRODUCT.colors[c].name;
+  const ICON_HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.2s-7.6-4.6-7.6-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.6 2.6c0 5.6-7.6 10.2-7.6 10.2z"/></svg>';
+  const ICON_MINUS = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 8h10"/></svg>';
+  const ICON_PLUS = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 8h10M8 3v10"/></svg>';
+
+  /* ---------- Saved in this browser only ---------- */
+  const saved = {
+    get(key, fallback) { try { const v = localStorage.getItem(key); return v ? JSON.parse(v) : fallback; } catch (e) { return fallback; } },
+    set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* storage unavailable: keep in memory */ } }
+  };
+  let wishlist = saved.get("romare.wishlist", []);
+  wishlist = Array.isArray(wishlist) ? wishlist.filter((c, i, a) => PRODUCT.colors[c] && a.indexOf(c) === i) : [];
+  let bag = saved.get("romare.bag", []);
+  bag = Array.isArray(bag) ? bag.filter((i) => i && PRODUCT.colors[i.color] && PRODUCT.sizes.includes(i.size) && Number.isInteger(i.qty) && i.qty > 0 && i.qty <= 10) : [];
+
+  /* ---------- Toast ---------- */
+  const toastEl = $("[data-toast]");
+  let toastTimer = 0;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove("show"), 2400);
+  }
+
+  /* ---------- Badges ---------- */
+  function updateBadges() {
+    const bagCount = bag.reduce((n, i) => n + i.qty, 0);
+    $$('[data-badge="bag"]').forEach((b) => { b.textContent = bagCount ? String(bagCount) : ""; });
+    $$('[data-badge="wishlist"]').forEach((b) => { b.textContent = wishlist.length ? String(wishlist.length) : ""; });
+    $$('[data-count-label]').forEach((btn) => {
+      const n = btn.dataset.open === "bag" ? bagCount : wishlist.length;
+      btn.setAttribute("aria-label", `${btn.dataset.countLabel}, ${n} ${n === 1 ? "item" : "items"}`);
+    });
+    $$("[data-menu-count]").forEach((s) => { s.textContent = wishlist.length ? `(${wishlist.length})` : ""; });
+  }
+
+  /* ---------- Wishlist ---------- */
+  function toggleWish(color) {
+    const on = !wishlist.includes(color);
+    wishlist = on ? wishlist.concat(color) : wishlist.filter((c) => c !== color);
+    saved.set("romare.wishlist", wishlist);
+    syncHearts();
+    renderWishlist();
+    updateBadges();
+    toast(on ? `${colorName(color)} saved to your wishlist` : `${colorName(color)} removed from your wishlist`);
+  }
+  function syncHearts() {
+    $$("[data-heart]").forEach((b) => {
+      const on = wishlist.includes(b.dataset.heart);
+      b.setAttribute("aria-pressed", String(on));
+      b.setAttribute("aria-label", `${on ? "Remove" : "Save"} ${colorName(b.dataset.heart)} ${on ? "from" : "to"} wishlist`);
+    });
+    const pw = $("[data-pdp-wish]");
+    if (pw) {
+      const on = wishlist.includes(pdp.color);
+      pw.setAttribute("aria-pressed", String(on));
+      $("[data-wish-label]", pw).textContent = on ? "Saved to Wishlist" : "Add to Wishlist";
+      $("svg", pw).setAttribute("fill", on ? "currentColor" : "none");
+    }
+  }
+  function renderWishlist() {
+    const body = $("[data-wish-body]");
+    if (!wishlist.length) {
+      body.innerHTML = `<div class="empty"><img src="img/logo-s.webp" width="160" height="160" alt=""><p>Your wishlist is empty. Tap the heart on a piece to save it here.</p><a class="link" href="#shop" data-close>Go to the Shop</a></div>`;
+      return;
+    }
+    body.innerHTML = wishlist.map((c) => `
+      <div class="line-item">
+        <a class="ph" href="#${PRODUCT.colors[c].route}" data-close tabindex="-1" aria-hidden="true"><img src="${viewSrc(c, "front", true)}" width="640" height="800" alt=""></a>
+        <div>
+          <div class="li-top"><p class="li-name"><a href="#${PRODUCT.colors[c].route}" data-close>${PRODUCT.title}</a></p></div>
+          <p class="li-meta">${colorName(c)} · ${money(PRODUCT.price)}</p>
+          <div class="li-actions"><a class="link" href="#${PRODUCT.colors[c].route}" data-close>View Product</a><button type="button" class="text-btn" data-unwish="${c}">Remove</button></div>
+        </div>
+      </div>`).join("");
+  }
+
+  /* ---------- Bag (demo mode) ---------- */
+  function addToBag(color, size, qty) {
+    const hit = bag.find((i) => i.color === color && i.size === size);
+    if (hit) hit.qty = Math.min(10, hit.qty + qty);
+    else bag.push({ color, size, qty });
+    commitBag();
+  }
+  function commitBag() {
+    saved.set("romare.bag", bag);
+    renderBag();
+    updateBadges();
+  }
+  function checkoutURL() {
+    if (STORE.mode !== "live" || !STORE.domain || !bag.length) return null;
+    const parts = bag.map((i) => {
+      const id = PRODUCT.shopify.variants[`${i.color}-${i.size}`];
+      return id ? `${id}:${i.qty}` : null;
+    });
+    return parts.includes(null) ? null : `https://${STORE.domain}/cart/${parts.join(",")}`;
+  }
+  function renderBag() {
+    const body = $("[data-bag-body]");
+    const foot = $("[data-bag-foot]");
+    if (!bag.length) {
+      body.innerHTML = `<div class="empty"><img src="img/logo-s.webp" width="160" height="160" alt=""><p>Your bag is empty.</p><button type="button" class="link" data-continue>Continue Shopping</button></div>`;
+      foot.innerHTML = "";
+      return;
+    }
+    body.innerHTML = bag.map((i, n) => `
+      <div class="line-item">
+        <a class="ph" href="#${PRODUCT.colors[i.color].route}" data-close tabindex="-1" aria-hidden="true"><img src="${viewSrc(i.color, "front", true)}" width="640" height="800" alt=""></a>
+        <div>
+          <div class="li-top"><p class="li-name"><a href="#${PRODUCT.colors[i.color].route}" data-close>${PRODUCT.title}</a></p><span class="price">${money(PRODUCT.price * i.qty)}</span></div>
+          <p class="li-meta">${colorName(i.color)} · Size ${i.size}</p>
+          <div class="li-actions">
+            <div class="qty sm" role="group" aria-label="Quantity for ${colorName(i.color)}, size ${i.size}">
+              <button type="button" data-line="${n}" data-delta="-1" aria-label="Decrease quantity"${i.qty <= 1 ? " disabled" : ""}>${ICON_MINUS}</button>
+              <output>${i.qty}</output>
+              <button type="button" data-line="${n}" data-delta="1" aria-label="Increase quantity"${i.qty >= 10 ? " disabled" : ""}>${ICON_PLUS}</button>
+            </div>
+            <button type="button" class="text-btn" data-remove="${n}">Remove</button>
+          </div>
+        </div>
+      </div>`).join("");
+    const subtotal = bag.reduce((s, i) => s + PRODUCT.price * i.qty, 0);
+    const live = checkoutURL();
+    foot.innerHTML = `
+      <div class="sum"><span>Subtotal</span><span>${money(subtotal)}</span></div>
+      <p class="small">Provisional prices. Shipping and taxes will be calculated at checkout.</p>
+      ${live ? `<a class="btn btn-solid btn-block" href="${live}" target="_blank" rel="noopener">Checkout</a>` : `<button type="button" class="btn btn-solid btn-block" data-checkout>Checkout</button>`}
+      <div class="checkout-note" data-checkout-note hidden>Checkout isn't open yet. Once ROMARE's Shopify store is set up, this button will lead to Shopify's secure checkout, where you can pay as a guest without creating an account. No order has been placed and no payment has been taken.</div>
+      <button type="button" class="btn btn-line btn-block" data-continue>Continue Shopping</button>`;
+  }
+
+  /* ---------- Shop grid ---------- */
+  function renderShop() {
+    $("[data-shop-grid]").innerHTML = Object.keys(PRODUCT.colors).map((c) => `
+      <article class="card">
+        <div class="card-media">
+          <a href="#${PRODUCT.colors[c].route}" aria-label="${PRODUCT.title}, ${colorName(c)}">
+            <div class="ph ph-45">
+              <img src="${viewSrc(c, "front", true)}" srcset="${viewSet(c, "front")}" sizes="(min-width: 700px) 48vw, 100vw" width="1122" height="1402" alt="${PRODUCT.title} in ${colorName(c)}, front view" loading="lazy">
+              <img class="alt" src="${viewSrc(c, "side", true)}" srcset="${viewSet(c, "side")}" sizes="(min-width: 700px) 48vw, 100vw" width="1122" height="1402" alt="" loading="lazy">
+            </div>
+          </a>
+          <button type="button" class="heart" data-heart="${c}" aria-pressed="false">${ICON_HEART}</button>
+        </div>
+        <div class="card-meta">
+          <h2 class="card-title">${PRODUCT.title}</h2>
+          <p class="card-color">${colorName(c)}</p>
+          <p class="price">${money(PRODUCT.price)}<small>Provisional</small></p>
+          <a class="link" href="#${PRODUCT.colors[c].route}">View Product</a>
+        </div>
+      </article>`).join("");
+  }
+
+  /* ---------- Product page ---------- */
+  const pdp = { color: "navy", view: 0, size: "", qty: 1 };
+  const stage = $("[data-stage]");
+  const stageBtn = $("[data-stage-img]");
+  const stageImg = $("img", stageBtn);
+  const stageDetails = $("[data-stage-details]");
+
+  function renderPDPStatic() {
+    $("[data-swatches]").innerHTML = Object.entries(PRODUCT.colors).map(([id, c]) =>
+      `<button type="button" class="swatch" data-swatch="${id}" aria-pressed="false" aria-label="${c.name}" title="${c.name}" style="--c:${c.hex}"><span></span></button>`).join("");
+    $("[data-sizes]").innerHTML = PRODUCT.sizes.map((s) =>
+      `<button type="button" class="size" data-size="${s}" aria-pressed="false">${s}</button>`).join("");
+    $("[data-price]").textContent = money(PRODUCT.price);
+  }
+  function renderGallery() {
+    const c = pdp.color;
+    const v = VIEWS[pdp.view];
+    const isDetails = v.key === "details";
+    stageBtn.hidden = isDetails;
+    stageDetails.hidden = !isDetails;
+    if (isDetails) {
+      stageDetails.innerHTML = DETAILS.map((d, i) => `<button type="button" data-detail="${i}" aria-label="Enlarge: ${d.label}"><img src="img/${c}-${d.key}.webp" width="444" height="420" alt="${colorName(c)} cardigan, ${DETAIL_ALT[d.key]}"><span>${d.label}</span></button>`).join("");
+    } else {
+      stageImg.srcset = viewSet(c, v.key);
+      stageImg.sizes = "(min-width: 960px) 54vw, 100vw";
+      stageImg.src = viewSrc(c, v.key);
+      stageImg.alt = `${PRODUCT.title} in ${colorName(c)}, ${VIEW_ALT[v.key]}`;
+      stageBtn.setAttribute("aria-label", `Enlarge the ${v.label.toLowerCase()} view`);
+    }
+    $("[data-count]").textContent = `${pdp.view + 1} / ${VIEWS.length}`;
+    const active = document.activeElement;
+    const keepFocus = active && active.closest && active.closest("[data-thumbs]");
+    $("[data-thumbs]").innerHTML = VIEWS.map((x, i) => {
+      const src = x.key === "details" ? `img/${c}-logo.webp` : viewSrc(c, x.key, true);
+      return `<button type="button" class="thumb" data-view-i="${i}" aria-current="${i === pdp.view}" aria-label="${x.label} view"><span class="t-img"><img src="${src}" alt="" loading="lazy"></span>${x.label}</button>`;
+    }).join("");
+    if (keepFocus) { const b = $(`[data-view-i="${pdp.view}"]`); if (b) b.focus(); }
+  }
+  function renderPDP() {
+    renderGallery();
+    renderOptions();
+  }
+  function renderOptions() {
+    $("[data-color-name]").textContent = colorName(pdp.color);
+    $$("[data-swatch]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.swatch === pdp.color)));
+    $$("[data-size]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.size === pdp.size)));
+    $("[data-qty-out]").textContent = String(pdp.qty);
+    $('[data-qty="-1"]').disabled = pdp.qty <= 1;
+    $('[data-qty="1"]').disabled = pdp.qty >= 10;
+    syncHearts();
+  }
+  function stepView(d) {
+    pdp.view = (pdp.view + d + VIEWS.length) % VIEWS.length;
+    renderGallery();
+  }
+  function pdpLightboxItems() {
+    const c = pdp.color;
+    return VIEWS.filter((v) => v.key !== "details").map((v) => ({ src: viewSrc(c, v.key), w: 1122, h: 1402, alt: `${PRODUCT.title} in ${colorName(c)}, ${VIEW_ALT[v.key]}`, cap: `${colorName(c)} · ${v.label}` }))
+      .concat(DETAILS.map((d) => ({ src: `img/${c}-${d.key}.webp`, w: 444, h: 420, alt: `${colorName(c)} cardigan, ${DETAIL_ALT[d.key]}`, cap: `${colorName(c)} · ${d.label}` })));
+  }
+  let swipeX = null;
+  let swiped = false;
+  stage.addEventListener("pointerdown", (e) => { swipeX = e.clientX; swiped = false; });
+  stage.addEventListener("pointerup", (e) => {
+    if (swipeX === null) return;
+    const dx = e.clientX - swipeX;
+    swipeX = null;
+    if (Math.abs(dx) > 50) { swiped = true; stepView(dx < 0 ? 1 : -1); }
+  });
+  stage.addEventListener("click", (e) => { if (swiped) { e.stopPropagation(); e.preventDefault(); swiped = false; } }, true);
+  $(".gallery").addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") { stepView(1); }
+    else if (e.key === "ArrowLeft") { stepView(-1); }
+  });
+
+  /* ---------- Design page ---------- */
+  let designColor = "navy";
+  function renderDesign() {
+    const c = designColor;
+    $("[data-design-views]").innerHTML = VIEWS.filter((v) => v.key !== "details").map((v, i) => `
+      <figure><button type="button" class="zoom ph ph-45" data-design-zoom="${i}" aria-label="Enlarge the ${v.label.toLowerCase()} view"><img src="${viewSrc(c, v.key, true)}" srcset="${viewSet(c, v.key)}" sizes="(min-width: 640px) 48vw, 100vw" width="1122" height="1402" alt="${PRODUCT.title} in ${colorName(c)}, ${VIEW_ALT[v.key]}" loading="lazy"></button><figcaption>${v.label === "Inside" ? "Open inside" : v.label}</figcaption></figure>`).join("");
+    $("[data-design-details]").innerHTML = DETAILS.map((d, i) => `
+      <figure><button type="button" class="zoom ph ph-11" data-design-detail="${i}" aria-label="Enlarge: ${d.label}"><img src="img/${c}-${d.key}.webp" width="444" height="420" alt="${colorName(c)} cardigan, ${DETAIL_ALT[d.key]}" loading="lazy"></button><figcaption>${d.label}</figcaption></figure>`).join("");
+    $$("[data-design-color]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.designColor === c)));
+  }
+  const designViewItems = () => VIEWS.filter((v) => v.key !== "details").map((v) => ({ src: viewSrc(designColor, v.key), w: 1122, h: 1402, alt: `${PRODUCT.title} in ${colorName(designColor)}, ${VIEW_ALT[v.key]}`, cap: `${colorName(designColor)} · ${v.label}` }));
+  const designDetailItems = () => DETAILS.map((d) => ({ src: `img/${designColor}-${d.key}.webp`, w: 444, h: 420, alt: `${colorName(designColor)} cardigan, ${DETAIL_ALT[d.key]}`, cap: d.label }));
+
+  /* ---------- Search ---------- */
+  const SEARCH = [
+    { title: PRODUCT.title, sub: `Navy Blue · ${money(PRODUCT.price)}`, href: "#product-navy", img: "img/navy-front-m.webp", keys: "navy blue cardigan wool quarter zip quarter-zip product shop buy bag sweater knit" },
+    { title: PRODUCT.title, sub: `Charcoal Gray · ${money(PRODUCT.price)}`, href: "#product-gray", img: "img/gray-front-m.webp", keys: "gray grey charcoal cardigan wool quarter zip quarter-zip product shop buy bag sweater knit" },
+    { title: "Size Guide", sub: "Provisional chart, S to XXL", action: "sizeguide", img: "img/size-guide.webp", keys: "size sizes sizing guide chart fit measure measurements chest waist small medium large xl xxl" },
+    { title: "The Design", sub: "Two classics. One garment.", href: "#design", img: "img/navy-open-m.webp", keys: "design construction inner outer zip zipper button buttons pocket pockets label emblem logo fabric wool knit detail" },
+    { title: "Our Story", sub: "Ruslan Alam on design and dressing well", href: "#story", img: "img/founder-m.webp", keys: "story founder ruslan alam father family manners wykeham fortnite cars architecture engineering sketch" },
+    { title: "Shop", sub: "The first collection", href: "#shop", img: "img/gray-front-m.webp", keys: "shop collection store price wishlist" },
+    { title: "Private Tailoring & Collaborations", sub: "Contact ROMARE", href: "#contact", img: "img/logo-s.webp", keys: "contact email message question help inquiry tailoring tailor bespoke custom collaboration collaborate partner manufacturer designer" }
+  ];
+  const qInput = $("#q");
+  function renderResults() {
+    const q = qInput.value.trim().toLowerCase();
+    const box = $("[data-results]");
+    const words = q.split(/\s+/).filter(Boolean);
+    const hits = words.length ? SEARCH.filter((s) => {
+      const hay = `${s.title} ${s.sub} ${s.keys}`.toLowerCase();
+      return words.every((w) => hay.includes(w));
+    }) : SEARCH;
+    const item = (s) => {
+      const inner = `<span class="ph"><img src="${s.img}" alt="" loading="lazy"></span><span><strong>${s.title}</strong><small>${s.sub}</small></span>`;
+      return s.href ? `<a class="result" href="${s.href}" data-close>${inner}</a>` : `<button type="button" class="result" data-open="${s.action}">${inner}</button>`;
+    };
+    if (!hits.length) {
+      box.innerHTML = `<p class="no-results">No results for “${qInput.value.trim().replace(/[<>&"]/g, "")}”. Try navy, gray, size or story.</p>`;
+      return;
+    }
+    box.innerHTML = `<p class="label">${words.length ? "Results" : "Suggestions"}</p>` + hits.slice(0, 7).map(item).join("");
+  }
+  qInput.addEventListener("input", renderResults);
+  qInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") { const first = $("[data-results] .result"); if (first) { e.preventDefault(); first.click(); } }
+  });
+
+  /* ---------- Overlays ---------- */
+  let lastFocus = null;
+  const unlockIfClear = () => {
+    if (!document.querySelector(".overlay:not([hidden]), .lightbox:not([hidden])")) document.documentElement.classList.remove("locked");
+  };
+  function openOverlay(id, opener) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    $$(".overlay:not([hidden])").forEach((o) => { o.hidden = true; });
+    if (opener && !opener.closest(".overlay")) lastFocus = opener;
+    if (id === "search") { qInput.value = ""; renderResults(); }
+    if (id === "bag") renderBag();
+    if (id === "wishlist") renderWishlist();
+    el.hidden = false;
+    document.documentElement.classList.add("locked");
+    const first = el.querySelector("[data-autofocus]") || el.querySelector("[data-close], button, a[href], input");
+    if (first) first.focus();
+  }
+  function closeOverlay(el, restore = true) {
+    if (!el || el.hidden) return;
+    el.hidden = true;
+    unlockIfClear();
+    if (restore && lastFocus && document.contains(lastFocus) && lastFocus.getClientRects().length) lastFocus.focus({ preventScroll: true });
+  }
+  function closeAll() {
+    $$(".overlay:not([hidden])").forEach((o) => { o.hidden = true; });
+    if (!lb.hidden) { lb.hidden = true; setZoom(false); }
+    document.documentElement.classList.remove("locked");
+  }
+  function trap(e, root) {
+    const items = $$('a[href], button:not([disabled]), input:not([disabled]), select, textarea', root).filter((x) => x.getClientRects().length);
+    if (!items.length) return;
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+
+  /* ---------- Lightbox ---------- */
+  const lb = $("#lightbox");
+  const lbStage = $(".lb-stage", lb);
+  const lbImg = $("img", lbStage);
+  const lbZoom = $(".lb-zoom", lb);
+  let lbItems = [];
+  let lbIndex = 0;
+  let lbOpener = null;
+  function setZoom(on) {
+    lbStage.classList.toggle("zoomed", on);
+    lbZoom.setAttribute("aria-label", on ? "Zoom out" : "Zoom in");
+  }
+  function showLb() {
+    const it = lbItems[lbIndex];
+    setZoom(false);
+    lbImg.style.setProperty("--ox", "50%");
+    lbImg.style.setProperty("--oy", "50%");
+    lbImg.src = it.src;
+    lbImg.width = it.w;
+    lbImg.height = it.h;
+    lbImg.alt = it.alt;
+    $(".lb-cap", lb).textContent = it.cap || "";
+    $(".lb-count", lb).textContent = lbItems.length > 1 ? `${lbIndex + 1} / ${lbItems.length}` : "";
+    $$(".lb-prev, .lb-next", lb).forEach((b) => { b.hidden = lbItems.length < 2; });
+  }
+  function openLightbox(items, index, opener) {
+    lbItems = items;
+    lbIndex = index;
+    lbOpener = opener || document.activeElement;
+    lb.hidden = false;
+    document.documentElement.classList.add("locked");
+    showLb();
+    $(".lb-close", lb).focus();
+  }
+  function closeLightbox() {
+    if (lb.hidden) return;
+    lb.hidden = true;
+    setZoom(false);
+    unlockIfClear();
+    if (lbOpener && document.contains(lbOpener) && lbOpener.getClientRects().length) lbOpener.focus({ preventScroll: true });
+  }
+  const stepLb = (d) => { lbIndex = (lbIndex + d + lbItems.length) % lbItems.length; showLb(); };
+  function aimZoom(e) {
+    const sr = lbStage.getBoundingClientRect();
+    const x = (e.clientX - sr.left - lbImg.offsetLeft) / lbImg.offsetWidth;
+    const y = (e.clientY - sr.top - lbImg.offsetTop) / lbImg.offsetHeight;
+    lbImg.style.setProperty("--ox", `${Math.round(Math.min(1, Math.max(0, x)) * 100)}%`);
+    lbImg.style.setProperty("--oy", `${Math.round(Math.min(1, Math.max(0, y)) * 100)}%`);
+  }
+  lbImg.addEventListener("click", (e) => {
+    const on = !lbStage.classList.contains("zoomed");
+    if (on) aimZoom(e);
+    setZoom(on);
+  });
+  lbImg.addEventListener("pointermove", (e) => { if (lbStage.classList.contains("zoomed")) aimZoom(e); });
+  lbZoom.addEventListener("click", () => {
+    lbImg.style.setProperty("--ox", "50%");
+    lbImg.style.setProperty("--oy", "50%");
+    setZoom(!lbStage.classList.contains("zoomed"));
+  });
+  $(".lb-close", lb).addEventListener("click", closeLightbox);
+  $(".lb-prev", lb).addEventListener("click", () => stepLb(-1));
+  $(".lb-next", lb).addEventListener("click", () => stepLb(1));
+  lbStage.addEventListener("click", (e) => { if (e.target === lbStage) closeLightbox(); });
+
+  /* ---------- Routing ---------- */
+  const VIEW_IDS = new Set($$("[data-view]").map((v) => v.dataset.view));
+  let routed = false;
+  function goTop() {
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    html.style.scrollBehavior = prev;
+  }
+  function route() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    let view = id;
+    let color = null;
+    for (const [c, info] of Object.entries(PRODUCT.colors)) if (info.route === id) { view = "product"; color = c; }
+    if (!VIEW_IDS.has(view) || view === "product" && !color) view = "home";
+    if (color) {
+      if (color !== pdp.color || !routed || $('[data-view="product"]').hidden) { pdp.view = 0; }
+      pdp.color = color;
+      renderPDP();
+    }
+    $$("[data-view]").forEach((v) => {
+      const show = v.dataset.view === view;
+      v.hidden = !show;
+      v.classList.toggle("view-enter", show && routed);
+    });
+    const navKey = view === "product" ? "shop" : view;
+    $$("[data-nav]").forEach((a) => {
+      if (a.dataset.nav === navKey) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+    closeAll();
+    goTop();
+    if (routed) {
+      const h = $(`[data-view="${view}"] h1`);
+      if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
+    }
+    routed = true;
+  }
+  window.addEventListener("hashchange", route);
+
+  /* ---------- Clicks ---------- */
+  document.addEventListener("click", (e) => {
+    const t = e.target;
+    if (!(t instanceof Element)) return;
+
+    const heart = t.closest("[data-heart]");
+    if (heart) { toggleWish(heart.dataset.heart); return; }
+    if (t.closest("[data-pdp-wish]")) { toggleWish(pdp.color); return; }
+    const unwish = t.closest("[data-unwish]");
+    if (unwish) { toggleWish(unwish.dataset.unwish); return; }
+
+    const sw = t.closest("[data-swatch]");
+    if (sw) {
+      pdp.color = sw.dataset.swatch;
+      renderPDP();
+      try { history.replaceState(null, "", "#" + PRODUCT.colors[pdp.color].route); } catch (err) { /* address bar stays as it was */ }
+      return;
+    }
+    const sz = t.closest("[data-size]");
+    if (sz) {
+      pdp.size = pdp.size === sz.dataset.size ? "" : sz.dataset.size;
+      $("[data-sizes]").classList.remove("need");
+      $("[data-need]").textContent = "";
+      renderOptions();
+      return;
+    }
+    const q = t.closest("[data-qty]");
+    if (q) { pdp.qty = Math.min(10, Math.max(1, pdp.qty + Number(q.dataset.qty))); renderOptions(); return; }
+    if (t.closest("[data-add-bag]")) {
+      if (!pdp.size) {
+        $("[data-sizes]").classList.add("need");
+        $("[data-need]").textContent = "Please choose a size.";
+        $("[data-size]").focus();
+        return;
+      }
+      addToBag(pdp.color, pdp.size, pdp.qty);
+      pdp.qty = 1;
+      renderOptions();
+      openOverlay("bag", t.closest("[data-add-bag]"));
+      toast("Added to your bag");
+      return;
+    }
+    const vi = t.closest("[data-view-i]");
+    if (vi) { pdp.view = Number(vi.dataset.viewI); renderGallery(); return; }
+    const st = t.closest(".gallery [data-step]");
+    if (st) { stepView(Number(st.dataset.step)); return; }
+    if (t.closest("[data-stage-img]")) { openLightbox(pdpLightboxItems(), pdp.view, t.closest("[data-stage-img]")); return; }
+    const det = t.closest("[data-detail]");
+    if (det) { openLightbox(pdpLightboxItems(), 4 + Number(det.dataset.detail), det); return; }
+
+    const dc = t.closest("[data-design-color]");
+    if (dc) { designColor = dc.dataset.designColor; renderDesign(); return; }
+    const dz = t.closest("[data-design-zoom]");
+    if (dz) { openLightbox(designViewItems(), Number(dz.dataset.designZoom), dz); return; }
+    const dd = t.closest("[data-design-detail]");
+    if (dd) { openLightbox(designDetailItems(), Number(dd.dataset.designDetail), dd); return; }
+    const single = t.closest("[data-zoom-single]");
+    if (single) {
+      const d = single.dataset;
+      openLightbox([{ src: d.src, w: Number(d.w), h: Number(d.h), alt: d.alt, cap: d.cap }], 0, single);
+      return;
+    }
+
+    const line = t.closest("[data-line]");
+    if (line) {
+      const item = bag[Number(line.dataset.line)];
+      if (item) { item.qty = Math.min(10, Math.max(1, item.qty + Number(line.dataset.delta))); commitBag(); }
+      return;
+    }
+    const rm = t.closest("[data-remove]");
+    if (rm) { bag.splice(Number(rm.dataset.remove), 1); commitBag(); toast("Removed from your bag"); $("#bag [data-close]").focus(); return; }
+    if (t.closest("[data-checkout]")) { const n = $("[data-checkout-note]"); if (n) { n.hidden = false; n.setAttribute("tabindex", "-1"); n.focus(); } return; }
+    if (t.closest("[data-continue]")) {
+      closeOverlay($("#bag"), false);
+      if (!["#shop", "#product-navy", "#product-gray"].includes(location.hash)) location.hash = "#shop";
+      return;
+    }
+
+    const op = t.closest("[data-open]");
+    if (op) { openOverlay(op.dataset.open, op); return; }
+    const cl = t.closest("[data-close]");
+    if (cl) { closeOverlay(cl.closest(".overlay"), !cl.matches("a[href]")); return; }
+    if (t.classList.contains("overlay")) { closeOverlay(t); return; }
+    if (t.closest("[data-skip]")) { e.preventDefault(); $("#main").focus(); return; }
+    const a = t.closest('a[href^="#"]');
+    if (a && a.getAttribute("href") === location.hash) goTop();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (!lb.hidden) {
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowRight" && lbItems.length > 1) stepLb(1);
+      else if (e.key === "ArrowLeft" && lbItems.length > 1) stepLb(-1);
+      else if (e.key === "Tab") trap(e, lb);
+      return;
+    }
+    const open = document.querySelector(".overlay:not([hidden])");
+    if (open) {
+      if (e.key === "Escape") closeOverlay(open);
+      else if (e.key === "Tab") trap(e, open);
+    }
+  });
+
+  /* ---------- Private tailoring and collaboration inquiries ----------
+     Connect one email service and inquiries arrive in that inbox:
+     - Web3Forms: enter the receiving email address at https://web3forms.com to get a
+       free access key, then paste it into web3formsKey.
+     - Formspree: create a form at https://formspree.io and paste its endpoint URL.
+     The thank-you message appears only after the service confirms it received the
+     inquiry. The claude.ai preview blocks outside requests, so sending works only on
+     the published website. */
+  const INQUIRIES = { web3formsKey: "b971e2ed-3440-4cd8-b1f6-3077507e6abd", formspreeEndpoint: "" };
+
+  const iqForm = $("[data-inquiry]");
+  const iqStatus = $("[data-inquiry-status]");
+  const iqSubmit = $("[data-inquiry-submit]");
+  const iqDone = $("[data-inquiry-done]");
+  function inquiryError(msg) {
+    iqStatus.classList.add("err");
+    iqStatus.textContent = msg;
+  }
+  async function sendInquiry(data, signal) {
+    const subject = `ROMARE inquiry: ${data.inquiry_type}`;
+    if (INQUIRIES.web3formsKey) {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(Object.assign({ access_key: INQUIRIES.web3formsKey, subject, from_name: "ROMARE website" }, data)),
+        signal
+      });
+      const out = await res.json().catch(() => ({}));
+      return res.ok && out.success === true;
+    }
+    const body = new FormData();
+    Object.entries(data).forEach(([k, v]) => body.append(k, v));
+    body.append("_subject", subject);
+    const res = await fetch(INQUIRIES.formspreeEndpoint, { method: "POST", headers: { Accept: "application/json" }, body, signal });
+    return res.ok;
+  }
+  iqForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    iqStatus.classList.remove("err");
+    iqStatus.textContent = "";
+    if ($("#iq-company").value) return;
+    const data = {
+      name: $("#iq-name").value.trim(),
+      email: $("#iq-email").value.trim(),
+      inquiry_type: $("#iq-type").value,
+      message: $("#iq-msg").value.trim()
+    };
+    if (!INQUIRIES.web3formsKey && !INQUIRIES.formspreeEndpoint) {
+      inquiryError("The inquiry form isn't connected yet, so nothing was sent. Please try again soon.");
+      return;
+    }
+    if (typeof window.claude !== "undefined") {
+      iqStatus.textContent = "This preview can't send inquiries. The form sends from the published ROMARE website.";
+      return;
+    }
+    iqSubmit.disabled = true;
+    iqSubmit.textContent = "Sending…";
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 15000);
+    let received = false;
+    try { received = await sendInquiry(data, ctrl.signal); } catch (err) { received = false; }
+    clearTimeout(timer);
+    iqSubmit.disabled = false;
+    iqSubmit.textContent = "Submit Inquiry";
+    if (!received) {
+      inquiryError("Your inquiry couldn't be sent. Please check your connection and try again.");
+      return;
+    }
+    iqForm.reset();
+    iqForm.hidden = true;
+    $("[data-done-email]").textContent = data.email;
+    iqDone.hidden = false;
+    iqDone.focus();
+  });
+  $("[data-inquiry-again]").addEventListener("click", () => {
+    iqDone.hidden = true;
+    iqForm.hidden = false;
+    $("#iq-name").focus();
+  });
+
+  /* ---------- Start ---------- */
+  renderShop();
+  renderPDPStatic();
+  renderDesign();
+  renderWishlist();
+  renderBag();
+  updateBadges();
+  syncHearts();
+  route();
+})();
+</script>
+</body>
+</html>
