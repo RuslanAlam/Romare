@@ -291,7 +291,8 @@ select.control option{color:var(--navy)}
 /* Private tailoring and collaborations */
 .inquiry{max-width:720px;margin-inline:auto;display:grid;gap:clamp(2rem,4vw,2.75rem);padding-top:clamp(.5rem,2vw,1.5rem)}
 .inquiry-head{display:grid;justify-items:center;text-align:center;gap:1.1rem}
-.inquiry-head p{font-family:var(--font-serif);font-size:1.0625rem;line-height:1.85;color:var(--navy);max-width:62ch}
+.inquiry-head p{font-family:var(--font-serif);font-size:1.0625rem;line-height:1.85;color:var(--navy);max-width:62ch;text-wrap:balance}
+.page-head .copy.one-line{max-width:none;text-wrap:balance}
 .inquiry .form{max-width:none;gap:1.3rem;padding-top:clamp(2rem,4vw,2.75rem);border-top:1px solid var(--gold)}
 .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .done{display:grid;justify-items:center;gap:1rem;text-align:center;padding-block:clamp(2.5rem,6vw,3.5rem);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
@@ -694,13 +695,13 @@ select.control option{color:var(--navy)}
   <header class="page-head wrap">
     <p class="label">Contact</p>
     <h1 class="title-l">Get in Touch</h1>
-    <p class="copy">Questions about ROMARE or the first collection are always welcome.</p>
+    <p class="copy one-line">Questions about ROMARE or the first collection are always welcome.</p>
   </header>
   <section class="wrap" aria-labelledby="tailor-title">
     <div class="inquiry">
       <div class="inquiry-head">
         <h2 class="title-m" id="tailor-title">Private Tailoring &amp; Collaborations</h2>
-        <p>At ROMARE, we believe that great clothing begins with individuality and attention to detail. As we continue developing our first collection, we welcome inquiries from individuals interested in future personalized tailoring, as well as designers, manufacturers, and creative partners who share our appreciation for timeless menswear.</p>
+        <p>At ROMARE, we believe that great clothing begins with individuality and attention to detail. As we continue developing our first collection, we welcome inquiries from individuals interested in future personalized tailoring, as well as designers, manufacturers, and creative partners who share our appreciation for timeless&nbsp;menswear.</p>
         <p>Whether you have a particular design in mind or an opportunity to collaborate, we would be pleased to hear from you.</p>
       </div>
       <form class="form" data-inquiry>
